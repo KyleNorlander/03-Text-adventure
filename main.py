@@ -18,12 +18,15 @@ def render(world,current_location):
 
 def check_input():
     '''request input from player'''
-    user_input = input("What would you like to do") 
+    user_input = input("What would you like to do?") 
     return user_input 
 
-def update():
+def update(selection,game,current):
     '''check if we need to move to a new location'''
-    return True
+    for e in game["rooms"][current]["exits"]:
+         if e['target'] == selection:
+             current = ['target']
+    return current
 
 
 def main():
