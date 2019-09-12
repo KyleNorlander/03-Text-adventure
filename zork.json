@@ -159,7 +159,7 @@
             "condition": ""
           }
         ],
-        "inventory": []
+        "inventory": ["sword","shield","armor"]
       },
       "NHOUS": {
         "name": "North of House",

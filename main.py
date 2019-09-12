@@ -14,18 +14,25 @@ def render(world,current_location):
     room = world[current_location]
     print(room["name"])
     print(room["desc"])
-    return True 
+    if len(room["inventory"]):
+        print("The room contains the following items:")
+        for i in room["inventory"]:
+            print(i)
 
-def check_input():
+def check_input(verbs):#this needs work
     '''request input from player'''
     user_input = input("What would you like to do?") 
     return user_input 
 
-def update(selection,game,current):
+def update(user_input,game,current):
     '''check if we need to move to a new location'''
-    for e in game["rooms"][current]["exits"]:
-         if e['target'] == selection:
-             current = ['target']
+    for e in game[current]["exits"]:
+        print(e)          #remove when done
+        print(e)          
+        print(user_input) #remove when done
+        if e['verb'] == user_input:
+             current = e['target']
+             print(current)
     return current
 
 
@@ -40,10 +47,11 @@ def main():
     quit = False
     while not quit:
         #render the world 
-        render(game["rooms"],current) 
+        render(game["rooms"],current)
         #check for player input
-        user_input = check_input()
-         #update the state of the world
+        user_input = check_input(game["verbs"])
+        #update the state of the world
+        current = update(user_input,game["rooms"],current)
 
 
     return True
