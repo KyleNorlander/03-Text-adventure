@@ -16,12 +16,13 @@ def render(world,current_location):
     print(room["desc"])
     if len(room["inventory"]):
         print("The room contains the following items:")
-        for i in room["inventory"]:
+        for i in room["inventory"]: 
             print(i)
 
 def check_input(verbs):#this needs work
     '''request input from player'''
     user_input = input("What would you like to do?") 
+    user_input = user_input.upper() 
     return user_input 
 
 def update(user_input,game,current):
@@ -61,3 +62,5 @@ def main():
 #if we are running this from the command line, run main
 if __name__ == '__main__':
 	main()
+
+    #add 
