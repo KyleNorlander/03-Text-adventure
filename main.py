@@ -15,7 +15,7 @@ def render(world,current_location):
     print(room["name"])
     print(room["desc"])
     if len(room["inventory"]):
-        print("The room contains the following items:")
+        print("You see the following things surrounding you:")
         for i in room["inventory"]: 
             print(i)
 
@@ -39,7 +39,7 @@ def update(user_input,game,current):
 
 def main():
     game = {}
-    with open('zork.json') as json_file:
+    with open('Kyle.json') as json_file:
         game = json.load(json_file)
     # Your game goes here!
 

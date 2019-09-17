@@ -135,8 +135,8 @@
     ],
     "rooms": {
       "WHOUS": {
-        "name": "West of House",
-        "desc": "This is an open field west of a white house, with a boarded front door.",
+        "name": "Campsite West of dilapidated cabin",
+        "desc": "Welcome back Jason. You are standing near your campsite in a foggy marsh facing the Westside of a dilapidated cabin. A tattered ghould guards the door. You shall not pass.",
         "exits": [
           {
             "verb": "NORTH",
@@ -155,15 +155,15 @@
           },
           {
             "verb": "EAST",
-            "target": "NoExit",
+            "target": "EHOUS",
             "condition": ""
           }
         ],
-        "inventory": ["sword","shield","armor"]
+        "inventory": ["Stick, grass... And hundreds of venomous snakes..."]
       },
       "NHOUS": {
-        "name": "North of House",
-        "desc": "You are facing the north side of a white house.  There is no door here,\r\nand all the windows are barred.",
+        "name": "Livestock field North of a dilapidated cabin.",
+        "desc": "In an open field facing the Northern side of the cabin. You see no entrance. However, there seems to be yellow glow emanating from inside. Its shine pierces from the windows and into the fog.",
         "exits": [
           {
             "verb": "WEST",
@@ -177,20 +177,20 @@
           },
           {
             "verb": "NORTH",
-            "target": "FORE3",
+            "target": "NHOUS",
             "condition": ""
           },
           {
             "verb": "SOUTH",
-            "target": "NoExit",
+            "target": "SHOUS",
             "condition": ""
           }
         ],
-        "inventory": []
+        "inventory": ["Dead livestock and scattered fires..."]
       },
       "SHOUS": {
-        "name": "South of House",
-        "desc": "You are facing the south side of a white house. There is no door here,\r\nand all the windows are barred.",
+        "name": "Log splitting site South of a dilapidated cabin.",
+        "desc": "You are facing the South side of a dilapidated cabin. The entrance and windows are boarded shut. A faint yellow glow is visible through the cracks of the door.",
         "exits": [
           {
             "verb": "WEST",
@@ -204,19 +204,19 @@
           },
           {
             "verb": "SOUTH",
-            "target": "FORE2",
+            "target": "SHOUS",
             "condition": ""
           },
           {
             "verb": "NORTH",
-            "target": "NoExit",
+            "target": "NHOUS",
             "condition": ""
           }
         ],
-        "inventory": []
+        "inventory": ["A headless, rotten corpse slumped over a splitting stump...With a dull axe still attached...  "]
       },
       "EHOUS": {
-        "name": "Behind House",
+        "name": "Dirt walkway East of a dilapidated cabin. A storm cellar lies in front of you.",
         "desc": "",
         "exits": [
           {
@@ -231,7 +231,7 @@
           },
           {
             "verb": "EAST",
-            "target": "CLEAR",
+            "target": "EHOUS",
             "condition": ""
           },
           {
@@ -245,7 +245,7 @@
             "condition": ""
           }
         ],
-        "inventory": []
+        "inventory": ["Rusted lock. It appears to be broken."]
       },
       "KITCH": {
         "name": "Kitchen",
