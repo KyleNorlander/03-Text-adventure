@@ -19,18 +19,15 @@ def render(world,current_location):
         for i in room["inventory"]: 
             print(i)
 
-def check_input(verbs):#this needs work
+def check_input(verbs):
     '''request input from player'''
-    user_input = input('"Which cardinal will you follow?" whispered the moccasin...') 
+    user_input = input('"Which cardinal will you follow now?" whispered the being...') 
     user_input = user_input.upper() 
     return user_input 
 
 def update(user_input,game,current):
     '''check if we need to move to a new location'''
     for e in game[current]["exits"]:
-        print(e)          #remove when done
-        print(e)          
-        print(user_input) #remove when done
         if e['verb'] == user_input:
              current = e['target']
              print(current)
@@ -39,7 +36,7 @@ def update(user_input,game,current):
 
 def main():
     game = {}
-    with open('Kyle.json') as json_file:
+    with open('Wanderer.json') as json_file:
         game = json.load(json_file)
     # Your game goes here!
 

@@ -136,7 +136,7 @@
     "rooms": {
       "WHOUS": {
         "name": "Campsite West of dilapidated cabin",
-        "desc": "Welcome back Jason. Trees howl in every direction. You are standing near your campsite in a foggy marsh facing the Western side of a dilapidated cabin. 'Where am I?' A tattered ghoul appears to be guarding the front door. Attempting to bypass the sentry would prove to be an excersize in futility. You will not pass.",
+        "desc": "Welcome back wanderer. Trees howl in every direction. You are standing near your campsite in a foggy marsh facing the Western side of a dilapidated cabin. A tattered ghoul appears to be guarding the front door of the structure. Attempting to bypass the sentry would prove to be an excersize in futility. You will not pass. A water moccasin approaches. It speaks. 'Hello again wanderer. I am the guardian of this here marsh. My fangs are sharp and my venom is harsh.'",
         "exits": [
           {
             "verb": "NORTH",
@@ -159,11 +159,11 @@
             "condition": ""
           }
         ],
-        "inventory": ["Stick, grass... And a fast approaching water moccasin...'Hello again wanderer. I am the '"]
+        "inventory": ["Sticks, grass, and a new slithery companion..."]
       },
       "NHOUS": {
         "name": "Livestock field North of a dilapidated cabin.",
-        "desc": "You find yourself in an open field facing the Northern side of the cabin. You see no entrance. However, there seems to be yellow glow emanating from inside. Its shine pierces from the windows and into the fog.",
+        "desc": "You find yourself in an open field facing the Northern side of the cabin. You see no entrance. However, there seems to be yellow glow emanating from inside. Its shine pierces through the boarded windows and into the fog.",
         "exits": [
           {
             "verb": "WEST",
@@ -190,7 +190,7 @@
       },
       "SHOUS": {
         "name": "Log splitting site South of a dilapidated cabin.",
-        "desc": "You are facing the South side of a dilapidated cabin. The entrance and windows are boarded shut. A faint yellow glow is visible through the cracks of the door.",
+        "desc": "You are facing the South side of a dilapidated cabin. The entrance and windows are boarded shut. However, a faint yellow glow is visible through the cracks of the door.",
         "exits": [
           {
             "verb": "WEST",
@@ -216,8 +216,8 @@
         "inventory": ["A headless, rotten corpse slumped over a splitting stump... With a dull axe head still attached...  "]
       },
       "EHOUS": {
-        "name": "Dirt walkway facing the Eastern side of a dilapidated cabin. You notice a storm cellar hidden in some overgroth..",
-        "desc": "",
+        "name": "Dirt walkway facing the Eastern side of a dilapidated cabin.",
+        "desc": "You notice a storm cellar covered by overgroth...",
         "exits": [
           {
             "verb": "SOUTH",
@@ -250,11 +250,11 @@
             "condition": ""
           }
         ],
-        "inventory": ["A Rusted lock lies to the side of the cellar doors. It appears to be broken."]
+        "inventory": ["A Rusted lock lies to the side of one of the cellar doors. It appears to be broken."]
       },
       "CELLAR": {
         "name": "Cellar",
-        "desc": "A dark and damp cellar. To your West you can barely make out the sight of an open door. Ahead, a yellow light reflects off of a worn staircase.",
+        "desc": "A dark and damp cellar. The moisture in the air is palpable. To your West you can barely make out the sight of an open door. To your North, a yellow light reflects off of a rickety staircase.",
         "exits": [
           {
             "verb": "EAST",
@@ -273,20 +273,20 @@
           },
           {
             "verb": "UP",
-            "target": "ATTIC",
+            "target": "GroundFloor",
             "condition": ""
           },
           {
-            "verb": "DOWN",
-            "target": "NoExit",
+            "verb": "NORTH",
+            "target": "Ground floor",
             "condition": ""
           }
         ],
         "inventory": ["Nothing but darkness..."]
       },
-      "": {
+      "GroundFloor": {
         "name": "Ground Floor of the dilapidated cabin",
-        "desc": "You've reached the ground floor of the dilapidated cabin! The tattered ghoul manifests from the shadows. It angrily turns its head in your direction. It begins to approach. A yellow light begins to pulse from a lockbox behind the ghoul. Its holy sheen erases the creature from existence. The lockbox draws you near. You are unable to resist. You open the box. Color slowly begins to flood the world around you. A once dilapidated cabin transforms back into a beautiful building lined with gold. You",
+        "desc": "You've reached the ground floor of the dilapidated cabin. A tattered ghoul manifests from the shadows. It angrily turns its head in your direction. It begins to approach. A yellow light begins to pulse from a lockbox behind the ghoul. Its holy sheen erases the creature from existence. The lockbox draws you near. You are unable to resist. You open the box. Color slowly begins to flood the world around you. A once dilapidated cabin transforms back into a beautiful building lined with gold. The scenery around shifts back to its once former grandeur, onwards throughout the fields and beyond the horizon. The water moccasin moprhs into an ethereal cardinal. It speaks. 'You've prevented the spread of a horrible omen... that of the dilapidated cabin. Come with me, and we shall never speak of this place. Endless thanks to you wanderer.' Victory! ",
         "exits": [
           {
             "verb": "EXIT",
@@ -298,7 +298,7 @@
       },
       "LROOM": {
         "name": "Cellar Room.",
-        "desc": "It reeks of shattered lives. The mold-worn door behind you begins to close slowly. A sillohuetted ghoul draws near... You turn your head scanning the shadows to no avail. A voice bellows out from a dark corner. 'Please wanderer...before it reaches you... you have to do it. Kill the terminal. It's the only way to reach te light.'",
+        "desc": "It reeks of shattered lives. The mold-worn door behind you begins to close slowly. A sillohuetted ghoul draws near... You turn your head scanning the shadows to no avail. There is no way out. A ghastly voice bellows out from a dark corner. 'Please wanderer, before it reaches you... you have to. KILL THE TERMINAL.' The voice pleads 'It's the only way to reach the light.' Game over...please try again.",
         "exits": [
           {
             "verb": "NORTH, SOUTH, EAST, WEST, EXIT",
@@ -306,7 +306,7 @@
             "condition": ""
           }
         ],
-        "inventory": []
+        "inventory": ["Darkness moving in..."]
       }
     }
   }
