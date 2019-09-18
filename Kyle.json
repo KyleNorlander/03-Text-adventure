@@ -159,7 +159,7 @@
             "condition": ""
           }
         ],
-        "inventory": ["Stick, grass... And a fast approaching water moccasin..."]
+        "inventory": ["Stick, grass... And a fast approaching water moccasin...'Hello again wanderer. I am the '"]
       },
       "NHOUS": {
         "name": "Livestock field North of a dilapidated cabin.",
@@ -286,11 +286,11 @@
       },
       "": {
         "name": "Ground Floor of the dilapidated cabin",
-        "desc": "SURPRISE! You've reached the ground floor or the dilapidated cabin! The tattered ghoul slowly turns its head in your direction.",
+        "desc": "You've reached the ground floor of the dilapidated cabin! The tattered ghoul manifests from the shadows. It angrily turns its head in your direction. It begins to approach. A yellow light begins to pulse from a lockbox behind the ghoul. Its holy sheen erases the creature from existence. The lockbox draws you near. You are unable to resist. You open the box. Color slowly begins to flood the world around you. A once dilapidated cabin transforms back into a beautiful building lined with gold. You",
         "exits": [
           {
-            "verb": "DOWN",
-            "target": "CELLAR",
+            "verb": "EXIT",
+            "target": "EXIT",
             "condition": ""
           }
         ],
@@ -298,7 +298,7 @@
       },
       "LROOM": {
         "name": "Cellar Room.",
-        "desc": "It reeks of shattered lives. The mold-worn door behind you begins to close slowly. A sillohuetted ghoul draws near... You turn your head scanning the shadows to no avail. A voice bellows out from a dark corner. 'Jason, please... you have to do it. Kill the terminal.'",
+        "desc": "It reeks of shattered lives. The mold-worn door behind you begins to close slowly. A sillohuetted ghoul draws near... You turn your head scanning the shadows to no avail. A voice bellows out from a dark corner. 'Please wanderer...before it reaches you... you have to do it. Kill the terminal. It's the only way to reach te light.'",
         "exits": [
           {
             "verb": "NORTH, SOUTH, EAST, WEST, EXIT",
