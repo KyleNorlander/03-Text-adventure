@@ -15,13 +15,13 @@ def render(world,current_location):
     print(room["name"])
     print(room["desc"])
     if len(room["inventory"]):
-        print("You see the following things surrounding you:")
+        print("You see the following things around you:")
         for i in room["inventory"]: 
             print(i)
 
 def check_input(verbs):#this needs work
     '''request input from player'''
-    user_input = input("What would you like to do?") 
+    user_input = input('"Which cardinal will you follow?" whispered the moccasin...') 
     user_input = user_input.upper() 
     return user_input 
 

@@ -136,7 +136,7 @@
     "rooms": {
       "WHOUS": {
         "name": "Campsite West of dilapidated cabin",
-        "desc": "Welcome back Jason. You are standing near your campsite in a foggy marsh facing the Westside of a dilapidated cabin. A tattered ghould guards the door. You shall not pass.",
+        "desc": "Welcome back Jason. Trees howl in every direction. You are standing near your campsite in a foggy marsh facing the Western side of a dilapidated cabin. 'Where am I?' A tattered ghoul appears to be guarding the front door. Attempting to bypass the sentry would prove to be an excersize in futility. You will not pass.",
         "exits": [
           {
             "verb": "NORTH",
@@ -159,11 +159,11 @@
             "condition": ""
           }
         ],
-        "inventory": ["Stick, grass... And hundreds of water moccasin's..."]
+        "inventory": ["Stick, grass... And a fast approaching water moccasin..."]
       },
       "NHOUS": {
         "name": "Livestock field North of a dilapidated cabin.",
-        "desc": "In an open field facing the Northern side of the cabin. You see no entrance. However, there seems to be yellow glow emanating from inside. Its shine pierces from the windows and into the fog.",
+        "desc": "You find yourself in an open field facing the Northern side of the cabin. You see no entrance. However, there seems to be yellow glow emanating from inside. Its shine pierces from the windows and into the fog.",
         "exits": [
           {
             "verb": "WEST",
@@ -213,17 +213,12 @@
             "condition": ""
           }
         ],
-        "inventory": ["A headless, rotten corpse slumped over a splitting stump...With a dull axe still attached...  "]
+        "inventory": ["A headless, rotten corpse slumped over a splitting stump... With a dull axe head still attached...  "]
       },
       "EHOUS": {
-        "name": "Dirt walkway East of a dilapidated cabin. A storm cellar lies in front of you.",
+        "name": "Dirt walkway facing the Eastern side of a dilapidated cabin. You notice a storm cellar hidden in some overgroth..",
         "desc": "",
         "exits": [
-          {
-            "verb": "NORTH",
-            "target": "NHOUS",
-            "condition": ""
-          },
           {
             "verb": "SOUTH",
             "target": "SHOUS",
@@ -236,16 +231,26 @@
           },
           {
             "verb": "WEST",
-            "target": "WHOUS",
+            "target": "CELLAR",
             "condition": ""
           },
           {
-            "verb": "ENTER",
+            "verb": "ENTER", 
             "target": "CELLAR",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN", 
+            "target": "CELLAR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH", 
+            "target": "NHOUS",
             "condition": ""
           }
         ],
-        "inventory": ["Rusted lock. It appears to be broken."]
+        "inventory": ["A Rusted lock lies to the side of the cellar doors. It appears to be broken."]
       },
       "CELLAR": {
         "name": "Cellar",
@@ -280,8 +285,8 @@
         "inventory": ["Nothing but darkness..."]
       },
       "": {
-        "name": "Ground Floor",
-        "desc": "SURPRISE! You've reached the ground floor or the dilapidated cabin! The tattered ghoul slowly turns their heads in your direction.",
+        "name": "Ground Floor of the dilapidated cabin",
+        "desc": "SURPRISE! You've reached the ground floor or the dilapidated cabin! The tattered ghoul slowly turns its head in your direction.",
         "exits": [
           {
             "verb": "DOWN",
@@ -293,13 +298,15 @@
       },
       "LROOM": {
         "name": "Cellar Room.",
-        "desc": "It wreaks of broken dreams and death. The door behind you slowly begins to close. Turn back now or spend eternity in the dilapidated cabin...",
+        "desc": "It reeks of shattered lives. The mold-worn door behind you begins to close slowly. A sillohuetted ghoul draws near... You turn your head scanning the shadows to no avail. A voice bellows out from a dark corner. 'Jason, please... you have to do it. Kill the terminal.'",
         "exits": [
           {
-            "verb": "EAST",
-            "target": "CELLAR",
+            "verb": "NORTH, SOUTH, EAST, WEST, EXIT",
+            "target": "NOEXIT",
             "condition": ""
           }
         ],
         "inventory": []
       }
+    }
+  }
