@@ -1,0 +1,37 @@
+Name:Ian Newhart
+Date:9/28
+Project: 03-Text-adventure-2
+Peer's repository: Kyle Norlander
+
+
+
+What is something you learned by reviewing your peer's project?
+An idea on how to use the inventory.
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+A more extensive list of verbs.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+I dont have any.
+ 
+
+What could have been clearer or better commented?
+The story could have used some new lines for some clarity while reading.
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+No.
+ 
+
+Does the repository contain an appropriate LICENSE?
+Yes.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+His Readme is very descriptive in his readme.
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+Your story is very creative.
