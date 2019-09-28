@@ -18,7 +18,7 @@ I dont have any.
  
 
 What could have been clearer or better commented?
-The story could have used some new line for some clarity while reading.
+The story could have used some new lines for some clarity while reading.
  
 
 Was there anything in the code that was confusing to you? If so, what?
